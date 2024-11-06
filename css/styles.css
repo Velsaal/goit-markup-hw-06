@@ -210,7 +210,6 @@ letter-spacing: 0.04em;
 color: #8e8f99;
 display: flex;
 align-items: center;
-gap: 8px;
 }
 .checkbox-div{
     margin-bottom: 24px;
@@ -486,7 +485,7 @@ color: #434455;
     justify-content: center;
     flex-direction: row;
  }
-span{
+.studio-span{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
 font-size: 18px;
@@ -577,6 +576,31 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
     /* max-width: 1440px; */
     min-width: 320px;
     margin: 0 auto;
+}
+@media(min-resolution: 192dpi){
+    .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officex2.jpg);
+    }
+}
+@media screen and (min-width: 768px){
+    .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_1.jpg);
+    }
+    @media (min-resolution: 192dpi){
+        .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officex2.jpg);
+    }
+    }
+}
+@media screen and (min-width: 1158px){
+    .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_1.jpg);
+    }
+    @media (min-resolution: 192dpi){
+        .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officex2.jpg);
+    }
+    }
 }
 .main-section{
     background: #2e2f42;
@@ -776,13 +800,14 @@ color: #2e2f42;
    position: relative;
    overflow: hidden;
   }
+  
 .overlay-text{
     position: absolute;
     margin: 0 auto;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 360px;
-    height: 300px;
+     width: 360px;
+    height: 300px; 
     padding: 40px 32px;
     background-color: #4d5ae5;
     color: #f4f4fd;
@@ -902,7 +927,6 @@ color: #fff;
 margin-bottom: 16px;
 text-align: center;
 }
-
 .footer-link-icons{
     width: 100%;
     height: 100%;
@@ -1031,7 +1055,7 @@ max-width: 496px;
     }
     .modal{
         width: 408px;
-min-height: 584px;
+max-height: 584px;
     }
 } 
 @media screen and (min-width:1158px){
@@ -1128,5 +1152,7 @@ display: flex;
 .subscribe-input{
    min-width: 264px;
 }
-   
+.overlay{
+    display: flex;
+}
 }

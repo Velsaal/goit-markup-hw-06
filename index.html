@@ -25,7 +25,7 @@
         <header class="page-header">
          <div class="container">
             <nav class="navigation">
-              <a class="logo-web" href="./index.html">Web<span>Studio</span></a>
+              <a class="logo-web" href="./index.html">Web<span class="studio-span">Studio</span></a>
               <ul class="menu">
                 <li class="nav-list"><a class="link active" href="./index.html">Studio</a></li>
                 <li class="nav-list"><a class="link" href="">Portfolio</a></li>
@@ -133,7 +133,7 @@
             <h2 class="team-card">Our Team</h2>
             <ul class="list">
               <li class="li-list">
-                  <img src="./images/img-3.jpg" width="264" height="260" alt="Mark Guerrero" />
+                  <img srcset="./images/img-3.jpg 1x, ./images/markx2.jpg 2x" src="./images/img-3.jpg" width="264" height="260" alt="Mark Guerrero" />
                   <div class="list-container">
                   <h3 class="your-team">Mark Guerrero</h3>
                   <p class="ioyu-team">Product Designer</p>
@@ -168,7 +168,7 @@
                 </div>
               </li>
               <li class="li-list">
-                    <img src="./images/img-2.jpg" width="264" height="260" alt="Tom Ford" />
+                    <img srcset="./images/img-2.jpg 1x, ./images/tomx2.jpg 2x" src="./images/img-2.jpg" width="264" height="260" alt="Tom Ford" />
                     <div class="list-container">
                     <h3 class="your-team">Tom Ford</h3>
                     <p class="ioyu-team">Frontend Developer</p>
@@ -203,7 +203,7 @@
                  </div>
               </li>
               <li class="li-list">
-                  <img src="./images/img-1.jpg" width="264" height="260" alt="Camila Garcia" />
+                  <img srcset="./images/img-1.jpg 1x, ./images/camilax2.jpg 2x" src="./images/img-1.jpg" width="264" height="260" alt="Camila Garcia" />
                    <div class="list-container">
                   <h3 class="your-team">Camila Garcia</h3>
                   <p class="ioyu-team">Marketing</p>
@@ -238,7 +238,7 @@
                 </div>
               </li>
               <li class="li-list">
-                  <img src="./images/img.jpg" width="264" height="260" alt="Daniel Wilson" />
+                  <img srcset="./images/img.jpg 1x, ./images/danielx2.jpg 2x" src="./images/img.jpg" width="264" height="260" alt="Daniel Wilson" />
                   <div class="list-container">
                   <h3 class="your-team">Daniel Wilson</h3>
                   <p class="ioyu-team">UI Designer</p>
@@ -281,7 +281,12 @@
             <ul class="four-list">    
               <li class="four-li">
               <div class="overlay">
-                <img src="./images/bank.jpg" width="360" alt="Banking App" />
+                <picture>
+                  <source srcset="./images/bank.jpg 1x, ./images/bankx2.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/bank-tab.jpg 1x, ./images/bank-tab-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/bank-tel.jpg 1x, ./images/bank-tel-2x.jpg 2x" media="(max-width: 767px)">
+                <img class="overlay-pics" src="./images/bank.jpg"  alt="Banking App" />
+              </picture>
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="four-container">
@@ -291,7 +296,12 @@
           </li>
           <li class="four-li">
               <div class="overlay">
-                <img src="./images/applepay.jpg" width="360" alt="Cashless Payment" />
+                <picture>
+                  <source srcset="./images/applepay.jpg 1x, ./images/applepayx2.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/applepay-tab.jpg 1x, ./images/applepay-tab-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/applepay-tel.jpg 1x, ./images/applepay-tel-2x.jpg 2x" media="(max-width: 767px)">
+                <img class="overlay-pics" src="./images/applepay.jpg"  alt="Cashless Payment" />
+              </picture>
                   <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="four-container">
@@ -301,7 +311,12 @@
           </li>
           <li class="four-li">
             <div class="overlay">
-              <img src="./images/appletv.jpg" width="360" alt="Meditation App" /> 
+              <picture>
+                <source srcset="./images/appletv.jpg 1x, ./images/laptopx2.jpg 2x" media="(min-width: 1158px)">
+                <source srcset="./images/laptop-tab.jpg 1x, ./images/laptop-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/laptop-tel.jpg 1x, ./images/laptop-tel-2x.jpg" media="(max-width: 767px)">
+              <img src="./images/appletv.jpg"  alt="Meditation App" />
+             </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="four-container">
@@ -311,7 +326,12 @@
            </li>
            <li class="four-li">
               <div class="overlay">
-                <img src="./images/car.jpg" width="360" alt="Taxi Service" />
+                <picture>
+                  <source srcset="./images/car.jpg 1x, ./images/carx2.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/taxi-tab.jpg 1x, ./images/taxi-tab-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/taxi-tel.jpg 1x, ./images/taxi-tel-2x.jpg" media="(max-width: 767px)">
+                <img class="overlay-pics" src="./images/car.jpg"  alt="Taxi Service" />
+              </picture>
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div> 
                 <div class="four-container">
@@ -321,7 +341,12 @@
            </li>
            <li class="four-li">
               <div class="overlay">
-                <img src="./images/wallpaper.jpg" width="360" alt="Screen Illustrations" />
+                <picture>
+                  <source srcset="./images/wallpaper.jpg 1x, ./images/iphonex2.jpg 2x" media="min:width: 1158px">
+                  <source srcset="./images/iphone-tab.jpg 1x, ./images/iphone-tab-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/iphone-tel.jpg 1x, ./images/iphone-tel-2x.jpg 2x" media="(max-width: 767px)">
+                <img class="overlay-pics" src="./images/wallpaper.jpg"  alt="Screen Illustrations" />
+              </picture>
   <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="four-container">
@@ -331,7 +356,12 @@
            </li>
            <li class="four-li">
               <div class="overlay">
-                <img src="./images/selfie.jpg" width="360" alt="Online Courses" />
+                <picture>
+                  <source srcset="./images/selfie.jpg 1x, ./images/selfiex2.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/selfie-tab.jpg 1x, ./images/selfie-tab-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/selfie-tel.jpg 1x, ./images/selfie-tel-2x.jpg 2x" media="(max-width: 767px)">
+                <img class="overlay-pics" src="./images/selfie.jpg"  alt="Online Courses" />
+              </picture>
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="four-container">
@@ -437,8 +467,8 @@
           <span class="label-span">
             <svg class="checkbox-svg" width="10" height="8"><use href="./images/icons.svg#icon-Vector-5"></use></svg>
           </span>
-          I accept the terms and conditions of the
-          <a class="privacy-link" href="">Privacy Policy</a>
+          <span>I accept the terms and conditions of the
+          <a class="privacy-link" href="">Privacy Policy</a></span>
          </label> 
          </div>
          <button class="btn-send" type="submit">Send</button>
